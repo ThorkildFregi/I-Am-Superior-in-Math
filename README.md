@@ -1,2 +1,5 @@
-# I_Am_Superior_in_Math
-An website who use an OCR to resolve calculations. The actual version is V0.1
+# I Am Superior in Math
+
+Presentation
+
+I Am Superior in Math (IASM) is a website who use easyOCR and Python to resolve your calculations. The actual version is V0.1
