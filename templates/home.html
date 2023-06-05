@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Home</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/css/uikit.min.css" />
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/uikit@3.15.18/dist/js/uikit-icons.min.js"></script>
+    <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.js"></script>
+</head>
+<body>
+    <div class="uk-container uk-align-center uk-flex uk-flex-center uk-flex-middle" uk-height-viewport="expand: true">
+        <div>
+            <h1 class="uk-text-center">Home</h1>
+            <br>
+            <p class="uk-text-center">Welcome to I Am Superior in Math ! You can use this website to solve your calculations.</p>
+            <form action="{{ url_for('home') }}" method="post" class="uk-container uk-align-center uk-flex uk-flex-center uk-flex-middle" enctype='multipart/form-data'>
+                <div uk-form-custom="target: true">
+                    <input name="image" id="image" type="file" aria-label="Custom controls">
+                    <input class="uk-input uk-form-width-medium" type="text" placeholder="Select file" aria-label="Custom controls" disabled>
+                </div>
+                <button class="uk-button uk-button-default">Submit</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
